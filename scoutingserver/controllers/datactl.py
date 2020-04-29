@@ -1,9 +1,9 @@
 import json
 from queue import Queue
 
-from dataconstants import Fields, ABS_DATA_DIR, JSON_FILE, CSV_FILE, ORDER
-from controllers import systemctl
-import interface.printing as printing
+from scoutingserver.dataconstants import Fields, ABS_DATA_DIR, JSON_FILE, CSV_FILE, ORDER
+from scoutingserver.controllers import systemctl
+from scoutingserver.interface import printing
 
 
 class DataController:

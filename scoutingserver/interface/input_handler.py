@@ -1,10 +1,10 @@
 from _thread import interrupt_main
 from threading import Thread
 
-from controllers.messagectl import make_message, MsgTypes
-from dataconstants import EVENT
-from interface import printing
-from strat.summarize import strategy
+from scoutingserver.controllers.messagectl import make_message, MsgTypes
+from scoutingserver.dataconstants import EVENT
+from scoutingserver.interface import printing
+from scoutingserver.strat.summarize import strategy
 
 
 class InputHandler:

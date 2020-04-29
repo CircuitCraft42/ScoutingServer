@@ -1,7 +1,7 @@
 from shutil import get_terminal_size
 from textwrap import TextWrapper
 
-from interface import printing
+from scoutingserver.interface import printing
 
 LOGO = '''
                      ,:++:,                      

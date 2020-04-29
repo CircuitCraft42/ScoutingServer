@@ -1,12 +1,14 @@
 import socket
 from threading import Thread
 
-from dataconstants import MAC_DICT
-from interface import printing
-from controllers.connection import Connection
-from controllers.systemctl import gethostMAC
+from scoutingserver.dataconstants import MAC_DICT
+from scoutingserver.interface import printing
+from scoutingserver.controllers.connection import Connection
+from scoutingserver.controllers.systemctl import gethostMAC
 
-PORT = 1
+from bluetooth import BluetoothSocket
+
+PORT = 5432
 BACKLOG = 1
 # Max message size
 SIZE = 1024
@@ -20,7 +22,7 @@ class SocketController:
         self.host_mac = gethostMAC()
         if self.host_mac:
             # Setup server socket
-            self.server_sock = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
+            self.server_sock = BluetoothSocket()
             self.server_sock.bind((self.host_mac, PORT))
             self.server_sock.listen(BACKLOG)
             self.server_sock.settimeout(None)

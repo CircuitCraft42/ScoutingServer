@@ -1,8 +1,8 @@
 import json
 from enum import Enum
 
-from dataconstants import Fields
-from interface import printing
+from scoutingserver.dataconstants import Fields
+from scoutingserver.interface import printing
 
 
 class MsgTypes(Enum):

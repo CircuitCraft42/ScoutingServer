@@ -5,7 +5,7 @@ from sys import platform
 from shutil import copyfile
 from time import sleep
 
-from interface import printing
+from scoutingserver.interface import printing
 
 # Runs a command in the shell
 def _run(command):
@@ -139,6 +139,8 @@ def gethostMAC():
         else:
             printing.printf('Server only runs on Linux, not Windows', style=printing.WARNING,
                             log=True, logtag='system.gethostMAC')
+            from getmac import get_mac_address
+            return get_mac_address('Bluetooth Network Connection')
     except IndexError:
         if out[0]:
             printing.printf('No bluetooth adapter available', style=printing.ERROR,

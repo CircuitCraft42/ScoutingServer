@@ -1,15 +1,15 @@
 # noinspection PyProtectedMember
 from os import _exit as osexit
 
-from controllers import datactl
-from controllers.messagectl import MessageController
-from controllers.socketctl import SocketController
-from dataconstants import EVENT
-from interface import printing
-from interface.header import print_header
-from interface.input_handler import InputHandler
-from interface.logger import log
-from tba.tba_saver import TBASaver
+from scoutingserver.controllers import datactl
+from scoutingserver.controllers.messagectl import MessageController
+from scoutingserver.controllers.socketctl import SocketController
+from scoutingserver.dataconstants import EVENT
+from scoutingserver.interface import printing
+from scoutingserver.interface.header import print_header
+from scoutingserver.interface.input_handler import InputHandler
+from scoutingserver.interface.logger import log
+from scoutingserver.tba.tba_saver import TBASaver
 
 
 class Server:
@@ -46,8 +46,3 @@ class Server:
 
                 # Quit everything (closes all the many threads)
                 osexit(1)
-
-
-if __name__ == '__main__':
-    server = Server()
-    server.main()

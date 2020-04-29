@@ -1,7 +1,7 @@
 import requests
 
-import tba.API as API
-from interface import printing
+import scoutingserver.tba.API as API
+from scoutingserver.interface import printing
 
 
 # TODO: make everything safe on errors and on no internet

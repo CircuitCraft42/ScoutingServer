@@ -1,7 +1,7 @@
 import json
 
-from dataconstants import EVENT, TBA_SAVE_FILE
-from tba.tba import Event
+from scoutingserver.dataconstants import EVENT, TBA_SAVE_FILE
+from scoutingserver.tba.tba import Event
 
 
 class TBASaver:

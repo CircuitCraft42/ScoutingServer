@@ -1,8 +1,8 @@
 from threading import Thread
 
-from dataconstants import MESSAGE_SIZE
-from interface import printing
-from interface.logger import log
+from scoutingserver.dataconstants import MESSAGE_SIZE
+from scoutingserver.interface import printing
+from scoutingserver.interface.logger import log
 
 
 class Connection:

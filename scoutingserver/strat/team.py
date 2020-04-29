@@ -1,6 +1,6 @@
 from enum import Enum
 
-from dataconstants import Fields
+from scoutingserver.dataconstants import Fields
 
 
 # Stores and calculates data about a team, and outputs it in the format of the match strategy sheets

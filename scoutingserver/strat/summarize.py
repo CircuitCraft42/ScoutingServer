@@ -1,8 +1,8 @@
-from interface import printing
-import dataconstants
-from controllers.datactl import load_json_file
-from interface.logger import log
-from strat.team import Team
+from scoutingserver.interface import printing
+import scoutingserver.dataconstants as dataconstants
+from scoutingserver.controllers.datactl import load_json_file
+from scoutingserver.interface.logger import log
+from scoutingserver.strat.team import Team
 
 
 # Get the data string to return from the list of teams

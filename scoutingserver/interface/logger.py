@@ -1,6 +1,6 @@
 from time import strftime
 
-from dataconstants import LOG_FILE
+from scoutingserver.dataconstants import LOG_FILE
 
 
 def log(tag, msg):
